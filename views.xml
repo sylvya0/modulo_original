@@ -35,22 +35,6 @@
 		</field>
 	</record>
 
-	<record id="view_orden_form" model="ir.ui.view">
-		<field name="name">orden.form</field>
-		<field name="model">basico.orden</field>
-		<field name="arch" type="xml">
-			<form>
-				<sheet>
-					<group>
-						<field name="name"/>
-						<field name="socio"/>
-						<field name="cantidad"/>
-					</group>
-				</sheet>
-			</form>
-		</field>
-	</record>
-
 	<record id="view_orden_tree" model="ir.ui.view">
 		<field name="name">orden.tree</field>
 		<field name="model">basico.orden</field>
@@ -67,6 +51,22 @@
 		<field name="name">Orden</field>
 		<field name="res_model">basico.orden</field>
 		<field name="view_mode">tree,form</field>
+	</record>
+
+		<record id="view_orden_form" model="ir.ui.view">
+		<field name="name">orden.form</field>
+		<field name="model">basico.orden</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+						<field name="name"/>
+						<field name="socio"/>
+						<field name="cantidad"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
 	</record>
 
 	<menuitem id="menu_basico" name="basico"/>
